@@ -1,4 +1,5 @@
 import React from 'react';
+import { Analytics } from '@vercel/analytics/react';
 import { ParticleCanvas } from './components/ParticleCanvas';
 import { Header } from './components/Header';
 import { Hero } from './components/Hero';
@@ -29,6 +30,7 @@ function App() {
           <Contact />
         </main>
         <Footer />
+        <Analytics />
       </div>
     </div>
   );
