@@ -1,0 +1,94 @@
+export const personalInfo = {
+  name: "Julio Cesar",
+  welcomeTitle: "Bem-vindo ao meu portfólio",
+  profession: "Full Stack Developer",
+  summary: "Construindo soluções digitais inovadoras e experiência web incríveis. Transformando ideias em código limpo e escalável.",
+  city: "Blumenau",
+  state: "SC",
+  email: "j.vanz1108@gmail.com",
+  phone: "47992449745",
+  linkedin: "https://www.linkedin.com/in/juliocesarvanz/",
+  github: "https://github.com/Jcvanz",
+  cvUrl: "/Curriculo_Julio_Cesar.pdf",
+  cvName: "Curriculo_Julio_Cesar.pdf",
+  systemStatus: ["Javascript", "Typescript", "PHP", "Laravel", "ReactJS", "NextJS", "NodeJS"],
+  aboutText: [
+    "Gaúcho de origem, mas com o código enraizado em Blumenau, Santa Catarina. Aos 22 anos e no 7º semestre de Ciência da Computação na FURB, atuo ha mais de 2 anos como Desenvolvedor Fullstack, focando na criação de soluções escaláveis e de alta performance.",
+    "Minha base técnica é sólida e diversificada: domino o ecossistema PHP/Laravel e o front-end moderno com React, Next.js e TypeScript, sempre utilizando Tailwind CSS para interface's refinadas. Tenho vasta experiência no setor de E-commerce, atuando diretamente na customização e integração de plataformas como Shopify, Tray e Nuvemshop, além do consumo e desenvolvimento de APIs complexas e integração com Node.js.",
+    "Minha trajetória é única: vim de uma base no Direito e estágios no setor público (Fórum e Prefeitura), o que me deu uma capacidade analítica diferenciada. Hoje, uno o rigor processual dessa experiência com a agilidade do mercado tech para entender regras de negócio complexas e transformá-las em software robusto antes mesmo da primeira linha de código ser escrita.",
+  ],
+  softSkills: [
+    "Resolução de Problemas",
+    "Pensamento Analítico",
+    "Foco em Performance",
+    "Trabalho em Equipe",
+    "Clean Code"
+  ]
+};
+
+export const coreStacks = [
+  { id: 1, name: "React", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" },
+  { id: 2, name: "Node.js", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" },
+  { id: 3, name: "Laravel", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/laravel/laravel-original.svg" },
+  { id: 4, name: "PHP", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" },
+  { id: 5, name: "TypeScript", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" },
+  { id: 6, name: "JavaScript", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" },
+  { id: 7, name: "Tailwind CSS", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original.svg" },
+  { id: 8, name: "PostgreSQL", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" },
+  { id: 9, name: "MySQL", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" },
+  { id: 10, name: "Docker", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" },
+  { id: 11, name: "Git", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" },
+  { id: 12, name: "HTML", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" },
+  { id: 13, name: "CSS", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" }
+];
+
+export const skillsRadarData = {
+  labels: ['Backend', 'Frontend', 'DevOps & Cloud', 'Banco de Dados', 'Arquitetura', 'Soft Skills'],
+  values: [60, 85, 55, 55, 70, 70]
+};
+
+export const experiencesData = [
+  {
+    id: 1,
+    empresa: "Wehsoft Sistemas",
+    cargo: "Desenvolvedor Full Stack",
+    periodo: "Abr 2024 - Atual",
+    local: "Blumenau, SC (Remoto)",
+    tipo: "Tempo Integral",
+    tecnologias: ["Laravel", "PHP", "React", "JavaScript", "Node.js", "Tailwind CSS", "MySQL", "E-commerce platforms"],
+    descricao: "Desenvolvimento de aplicações web fullstack utilizando React, Next.js, TypeScript e PHP/Laravel, atuando na criação de interfaces administrativas, páginas de produto e integrações entre sistemas.\nConstrução e otimização de lojas virtuais em Shopify, Tray e Nuvemshop, implementando componentes customizados, carrosséis, vitrines e melhorias focadas em performance e conversão.\nIntegração de APIs REST para automações e sincronização de dados, além de manutenção e evolução de sistemas em produção."
+  },
+  
+];
+
+export const githubStatsData = {
+  repositories: 28,
+  stars: 45,
+  followers: 24,
+  topLanguage: "TypeScript",
+  languages: [
+    { name: "TypeScript", percentage: 45, color: "#3178c6" },
+    { name: "JavaScript", percentage: 30, color: "#f7df1e" },
+    { name: "HTML/CSS", percentage: 15, color: "#22d3ee" },
+    { name: "Outros", percentage: 10, color: "#a855f7" }
+  ]
+};
+
+export const projectsData = [
+  {
+    id: 1,
+    title: "Zero Tools",
+    description: "ZeroTools é mais que um site, é uma caixa de ferramentas com 14 utilitários essenciais (como removedor de fundo com IA, compressores de imagens/PDF e gerador de QR Code) que executa 100% no navegador do usuário. Projetado com uma filosofia zero-backend, garante privacidade total dos arquivos processando tudo via WebAssembly e Web APIs nativas.",
+    image: "/fotos/zeroTools.png",
+    tags: ["React", "TypeScript", "Deploy - Vercel", "Vite"],
+    link: "https://www.myzerotools.online/"
+  },
+  {
+    id: 2,
+    title: "Task Sync - Entra21",
+    description: "Desenvolvido como TCC no curso de React Native do programa Entra21 por uma equipe de 3 desenvolvedores, o Task Sync é um aplicativo focado na organização e delegação de tarefas em equipe. A solução nasceu da nossa vivência prática sobre a importância da clareza de papéis, priorizando uma prototipagem funcional e recursos essenciais para simplificar a gestão e produtividade de times.",
+    image: "/fotos/taskSync.png",
+    tags: ["React Native", "JavaScript", "Firebase", "Expo"],
+    link: "https://github.com/Jcvanz/Entra21-TCC"
+  },
+];
