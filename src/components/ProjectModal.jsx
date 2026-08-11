@@ -20,14 +20,14 @@ export const ProjectModal = ({ project, onClose }) => {
   if (!project) return null;
 
   return (
-    <div className="fixed inset-0 z-[9999] flex items-center justify-center p-4">
+    <div className="fixed inset-0 z-50 flex items-center justify-center p-4">
       
       <div
-        className="absolute inset-0 bg-slate-950/80 backdrop-blur-md transition-opacity duration-300"
+        className="absolute z-50 inset-0 bg-slate-950/80 backdrop-blur-md transition-opacity duration-300"
         onClick={onClose}
       />
 
-      <div className="relative w-full max-w-xl max-h-[85vh] overflow-hidden rounded-2xl border border-white/10 bg-slate-900/95 backdrop-blur-2xl shadow-[0_0_50px_rgba(34,211,238,0.15)] p-6 md:p-8 flex flex-col justify-between z-10 transform animate-in fade-in zoom-in-95 duration-200">
+      <div className="relative z-60 w-full max-w-xl max-h-[85vh] overflow-hidden rounded-2xl border border-white/10 bg-slate-900/95 backdrop-blur-2xl shadow-[0_0_50px_rgba(34,211,238,0.15)] p-6 md:p-8 flex flex-col justify-between z-10 transform animate-in fade-in zoom-in-95 duration-200">
         <div className="absolute top-0 left-8 right-8 h-0.5 bg-gradient-to-r from-transparent via-cyan-400 to-transparent"></div>
 
         <div className="flex items-start justify-between gap-4 mb-4">

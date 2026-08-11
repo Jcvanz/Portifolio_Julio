@@ -21,7 +21,7 @@ export const Header = () => {
   ];
 
   return (
-    <header className="fixed top-0 left-0 w-full z-50 transition-all duration-500 ease-out px-4 md:px-6 py-4 pointer-events-none">
+    <header className="fixed top-0 left-0 w-full z-40 transition-all duration-500 ease-out px-4 md:px-6 py-4 pointer-events-none">
       <div className="max-w-7xl mx-auto flex items-center justify-between pointer-events-auto">
         
         <div className={`w-full flex items-center justify-between rounded-full px-6 py-3 border transition-all duration-500 ${

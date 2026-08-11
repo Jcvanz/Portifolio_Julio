@@ -13,92 +13,94 @@ export const Projects = () => {
   const [selectedProject, setSelectedProject] = useState(null);
 
   return (
-    <section id="projects" className="w-full relative z-10 py-24 bg-slate-950/60 border-t border-white/5 backdrop-blur-md">
-      <div className="max-w-7xl mx-auto px-4 md:px-6">
-        
-        <div className="flex items-center gap-3 mb-16 justify-center">
-          <div className="h-px bg-gradient-to-l from-cyan-500/50 to-transparent flex-1 mr-4 max-w-xs hidden sm:block"></div>
-          <span className="w-2 h-2 rounded-full bg-cyan-400 animate-pulse shadow-[0_0_8px_rgba(34,211,238,0.8)]"></span>
-          <h3 className="text-white text-2xl md:text-3xl font-mono uppercase tracking-widest text-center">
-            Meus <span className="text-cyan-400 font-bold">Projetos</span>
-          </h3>
-          <span className="w-2 h-2 rounded-full bg-blue-500 animate-pulse shadow-[0_0_8px_rgba(59,130,246,0.8)]"></span>
-          <div className="h-px bg-gradient-to-r from-blue-500/50 to-transparent flex-1 ml-4 max-w-xs hidden sm:block"></div>
-        </div>
+    <>
+      <section id="projects" className="w-full relative py-24 bg-slate-950/60 border-t border-white/5 backdrop-blur-md">
+        <div className="max-w-7xl mx-auto px-4 md:px-6">
+          
+          <div className="flex items-center gap-3 mb-16 justify-center">
+            <div className="h-px bg-gradient-to-l from-cyan-500/50 to-transparent flex-1 mr-4 max-w-xs hidden sm:block"></div>
+            <span className="w-2 h-2 rounded-full bg-cyan-400 animate-pulse shadow-[0_0_8px_rgba(34,211,238,0.8)]"></span>
+            <h3 className="text-white text-2xl md:text-3xl font-mono uppercase tracking-widest text-center">
+              Meus <span className="text-cyan-400 font-bold">Projetos</span>
+            </h3>
+            <span className="w-2 h-2 rounded-full bg-blue-500 animate-pulse shadow-[0_0_8px_rgba(59,130,246,0.8)]"></span>
+            <div className="h-px bg-gradient-to-r from-blue-500/50 to-transparent flex-1 ml-4 max-w-xs hidden sm:block"></div>
+          </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {projectsData.map((project) => (
-            <div
-              key={project.id}
-              className="group relative w-full h-80 rounded-2xl overflow-hidden cursor-pointer border border-white/10 hover:border-cyan-500/50 shadow-lg hover:shadow-[0_0_30px_rgba(34,211,238,0.2)] bg-slate-900/60 transition-all duration-500 flex flex-col justify-end p-6"
-            >
-              {project.image ? (
-                <img
-                  src={project.image}
-                  alt={project.title}
-                  className="absolute inset-0 w-full h-full object-cover opacity-60 group-hover:scale-110 group-hover:opacity-30 transition-all duration-700"
-                />
-              ) : (
-                <div className="absolute inset-0 bg-gradient-to-br from-slate-800 to-slate-900"></div>
-              )}
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {projectsData.map((project) => (
+              <div
+                key={project.id}
+                className="group relative w-full h-80 rounded-2xl overflow-hidden cursor-pointer border border-white/10 hover:border-cyan-500/50 shadow-lg hover:shadow-[0_0_30px_rgba(34,211,238,0.2)] bg-slate-900/60 transition-all duration-500 flex flex-col justify-end p-6"
+              >
+                {project.image ? (
+                  <img
+                    src={project.image}
+                    alt={project.title}
+                    className="absolute inset-0 w-full h-full object-cover opacity-60 group-hover:scale-110 group-hover:opacity-30 transition-all duration-700"
+                  />
+                ) : (
+                  <div className="absolute inset-0 bg-gradient-to-br from-slate-800 to-slate-900"></div>
+                )}
 
-              <div className="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/60 to-transparent group-hover:via-slate-950/80 transition-all duration-500"></div>
+                <div className="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/60 to-transparent group-hover:via-slate-950/80 transition-all duration-500"></div>
 
-              <div className="relative z-10 space-y-3">
-                <h4 className="text-xl font-bold text-white group-hover:text-cyan-400 transition-colors drop-shadow-md">
-                  {project.title}
-                </h4>
+                <div className="relative z-10 space-y-3">
+                  <h4 className="text-xl font-bold text-white group-hover:text-cyan-400 transition-colors drop-shadow-md">
+                    {project.title}
+                  </h4>
 
-                <p className="text-gray-300 text-xs line-clamp-2 leading-relaxed opacity-90">
-                  {project.description}
-                </p>
+                  <p className="text-gray-300 text-xs line-clamp-2 leading-relaxed opacity-90">
+                    {project.description}
+                  </p>
 
-                <button
-                  type="button"
-                  onClick={() => setSelectedProject(project)}
-                  className="text-cyan-400 text-xs font-bold hover:text-cyan-300 cursor-pointer flex items-center gap-1 transition-colors pt-1"
-                >
-                  <span>Ler mais</span>
-                  <ArrowRight size={14} className="group-hover:translate-x-1 transition-transform" />
-                </button>
+                  <button
+                    type="button"
+                    onClick={() => setSelectedProject(project)}
+                    className="text-cyan-400 text-xs font-bold hover:text-cyan-300 cursor-pointer flex items-center gap-1 transition-colors pt-1"
+                  >
+                    <span>Ler mais</span>
+                    <ArrowRight size={14} className="group-hover:translate-x-1 transition-transform" />
+                  </button>
 
-                <div className="flex flex-wrap gap-1.5 pt-2">
-                  {project.tags.slice(0, 3).map((tag, idx) => (
-                    <span
-                      key={idx}
-                      className="px-2 py-0.5 text-[10px] font-mono text-cyan-200 bg-cyan-950/60 border border-cyan-500/30 rounded"
-                    >
-                      {tag}
-                    </span>
-                  ))}
-                  {project.tags.length > 3 && (
-                    <span className="px-1.5 py-0.5 text-[10px] font-mono text-gray-400 bg-white/5 rounded">
-                      +{project.tags.length - 3}
-                    </span>
-                  )}
+                  <div className="flex flex-wrap gap-1.5 pt-2">
+                    {project.tags.slice(0, 3).map((tag, idx) => (
+                      <span
+                        key={idx}
+                        className="px-2 py-0.5 text-[10px] font-mono text-cyan-200 bg-cyan-950/60 border border-cyan-500/30 rounded"
+                      >
+                        {tag}
+                      </span>
+                    ))}
+                    {project.tags.length > 3 && (
+                      <span className="px-1.5 py-0.5 text-[10px] font-mono text-gray-400 bg-white/5 rounded">
+                        +{project.tags.length - 3}
+                      </span>
+                    )}
+                  </div>
                 </div>
+
+                <div className="absolute top-4 left-4 w-4 h-4 border-t-2 border-l-2 border-cyan-500/0 group-hover:border-cyan-400 transition-all duration-500 pointer-events-none"></div>
+                <div className="absolute bottom-4 right-4 w-4 h-4 border-b-2 border-r-2 border-blue-500/0 group-hover:border-blue-400 transition-all duration-500 pointer-events-none"></div>
               </div>
+            ))}
+          </div>
 
-              <div className="absolute top-4 left-4 w-4 h-4 border-t-2 border-l-2 border-cyan-500/0 group-hover:border-cyan-400 transition-all duration-500 pointer-events-none"></div>
-              <div className="absolute bottom-4 right-4 w-4 h-4 border-b-2 border-r-2 border-blue-500/0 group-hover:border-blue-400 transition-all duration-500 pointer-events-none"></div>
-            </div>
-          ))}
+          <div className="mt-16 text-center">
+            <a
+              href={personalInfo.github}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-3 px-8 py-4 rounded-full border border-cyan-500/30 text-cyan-400 hover:bg-cyan-500/10 hover:border-cyan-400 transition-all duration-300 font-mono tracking-widest hover:shadow-[0_0_20px_rgba(34,211,238,0.2)] group"
+            >
+              <span>Explorar Repositórios</span>
+              <GithubIcon className="w-5 h-5 group-hover:scale-110 transition-transform" />
+            </a>
+          </div>
+
         </div>
 
-        <div className="mt-16 text-center">
-          <a
-            href={personalInfo.github}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex items-center gap-3 px-8 py-4 rounded-full border border-cyan-500/30 text-cyan-400 hover:bg-cyan-500/10 hover:border-cyan-400 transition-all duration-300 font-mono tracking-widest hover:shadow-[0_0_20px_rgba(34,211,238,0.2)] group"
-          >
-            <span>Explorar Repositórios</span>
-            <GithubIcon className="w-5 h-5 group-hover:scale-110 transition-transform" />
-          </a>
-        </div>
-
-      </div>
-
+      </section>
       {/* Modal de Detalhes do Projeto */}
       {selectedProject && (
         <ProjectModal
@@ -106,6 +108,6 @@ export const Projects = () => {
           onClose={() => setSelectedProject(null)}
         />
       )}
-    </section>
+    </>
   );
 };
