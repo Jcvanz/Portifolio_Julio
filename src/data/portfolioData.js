@@ -13,9 +13,9 @@ export const personalInfo = {
   cvName: "Curriculo_Julio_Cesar.pdf",
   systemStatus: ["Javascript", "Typescript", "PHP", "Laravel", "ReactJS", "NextJS", "NodeJS"],
   aboutText: [
-    "Gaúcho de origem, mas com o código enraizado em Blumenau, Santa Catarina. Aos 22 anos e no 7º semestre de Ciência da Computação na FURB, atuo ha mais de 2 anos como Desenvolvedor Fullstack, focando na criação de soluções escaláveis e de alta performance.",
-    "Minha base técnica é sólida e diversificada: domino o ecossistema PHP/Laravel e o front-end moderno com React, Next.js e TypeScript, sempre utilizando Tailwind CSS para interface's refinadas. Tenho vasta experiência no setor de E-commerce, atuando diretamente na customização e integração de plataformas como Shopify, Tray e Nuvemshop, além do consumo e desenvolvimento de APIs complexas e integração com Node.js.",
-    "Minha trajetória é única: vim de uma base no Direito e estágios no setor público (Fórum e Prefeitura), o que me deu uma capacidade analítica diferenciada. Hoje, uno o rigor processual dessa experiência com a agilidade do mercado tech para entender regras de negócio complexas e transformá-las em software robusto antes mesmo da primeira linha de código ser escrita.",
+    "Desenvolvedor Fullstack com +2 anos de experiência e graduando em Ciência da Computação na FURB. Focado na criação de aplicações web escaláveis, eficientes e de alta performance.",
+    "Especialista no ecossistema PHP/Laravel e no front-end moderno com React, Next.js e TypeScript. Possuo ampla vivência em E-commerce, desenvolvimento de APIs complexas e integração com plataformas como Shopify, Tray e Nuvemshop.",
+    "Com histórico prévio no Direito e setor público, aplico uma forte capacidade analítica para interpretar regras de negócio complexas e transformá-las em software robusto.",
   ],
   softSkills: [
     "Resolução de Problemas",
@@ -57,6 +57,26 @@ export const experiencesData = [
     tipo: "Tempo Integral",
     tecnologias: ["Laravel", "PHP", "React", "JavaScript", "Node.js", "Tailwind CSS", "MySQL", "E-commerce platforms"],
     descricao: "Desenvolvimento de aplicações web fullstack utilizando React, Next.js, TypeScript e PHP/Laravel, atuando na criação de interfaces administrativas, páginas de produto e integrações entre sistemas.\nConstrução e otimização de lojas virtuais em Shopify, Tray e Nuvemshop, implementando componentes customizados, carrosséis, vitrines e melhorias focadas em performance e conversão.\nIntegração de APIs REST para automações e sincronização de dados, além de manutenção e evolução de sistemas em produção."
+  },
+  {
+    id: 2,
+    empresa: "Foro da Comarca de São José do Ouro",
+    cargo: "Estagiário Direito",
+    periodo: "Fev 2022 - Out 2022",
+    local: "São José do Ouro, RS",
+    tipo: "Meio Período",
+    tecnologias: [],
+    descricao: "Redação e revisão de sentenças cíveis, desenvolvendo raciocínio analítico, atenção a detalhes e precisão na comunicação escrita.\nAtuação colaborativa com equipe multidisciplinar de servidores e estagiários, contribuindo para a organização de fluxos de trabalho e cumprimento de prazos em ambiente de alta demanda."
+  },
+  {
+    id: 3,
+    empresa: "Prefeitura de São José do Ouro",
+    cargo: "Estagiário Administração",
+    periodo: "Jan 2021 - Dez 2021",
+    local: "São José do Ouro, RS",
+    tipo: "Meio Período",
+    tecnologias: [],
+    descricao: "Responsável pelo lançamento e controle de notas fiscais, garantindo precisão e organização nos registros administrativos do setor.\nAtendimento ao público e suporte operacional em múltiplos setores, desenvolvendo comunicação clara e capacidade de adaptação a demandas variadas.\nAssumia a responsabilidade pelo setor durante ausência da servidora titular, demonstrando confiança da equipe e capacidade de gestão independente desde o início da carreira."
   },
   
 ];
